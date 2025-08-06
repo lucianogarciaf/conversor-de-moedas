@@ -7,7 +7,13 @@ import 'home.dart';
 const request = "https://api.fxratesapi.com/latest"; //endereço da api
 
 void main() async {
-  runApp(MaterialApp(home: Home(), debugShowCheckedModeBanner: false));
+  runApp(
+    MaterialApp(
+      home: Home(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(hintColor: Colors.amber, primaryColor: Colors.white),
+    ),
+  );
 }
 
 Future<Map> getData() async {
